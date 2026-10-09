@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#170f16">
+  <meta name="description" content="VIXENVERSE — A World of Games & Mysteries. ألعاب وألغاز وتحديات من ابتكار VixenShahd.">
+  <title>VIXENVERSE — A World of Games & Mysteries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="VIXENVERSE home">
+      <span class="brand-mark">✦</span><span>VIXEN<span class="brand-accent">VERSE</span></span>
+    </a>
+    <nav class="nav-links"><a href="#games" data-i18n="navGames">الألعاب</a><a href="#daily" data-i18n="navDaily">تحدّي اليوم</a><a href="#about" data-i18n="navAbout">عن المشروع</a></nav>
+    <button id="languageToggle" class="language-toggle" aria-label="Change language">EN ↗</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span><span data-i18n="eyebrow">عالم مفتوح للجميع • تحديات بلا حدود</span></div>
+        <h1 data-i18n="heroTitle">عالمك يبدأ<br><em>خلف هذا الباب.</em></h1>
+        <p class="hero-description" data-i18n="heroDesc">ادخل عوالم الألغاز، اختبر سرعة بديهتك، واكتشف أي شخصية تسكن داخلك. كل جولة تخبّئ شيئًا جديدًا.</p>
+        <div class="hero-actions"><a href="#games" class="button button-primary"><span data-i18n="explore">اكتشف الألعاب</span><span aria-hidden="true">↙</span></a><a href="#about" class="text-link" data-i18n="learnMore">اكتشف الحكاية</a></div>
+        <div class="hero-stats"><div><strong>04</strong><span data-i18n="statGames">ألعاب جاهزة</span></div><div><strong>∞</strong><span data-i18n="statCuriosity">فضول بلا نهاية</span></div><div><strong>01</strong><span data-i18n="statCreator">عقل خلف الفكرة</span></div></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative portal illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="portal"><div class="portal-inner"><span class="portal-symbol">V</span><span class="portal-star star-one">✦</span><span class="portal-star star-two">✧</span></div></div>
+        <div class="floating-card card-top"><span class="mini-icon">⌘</span><span data-i18n="artCard1">فكّر خارج المألوف</span></div>
+        <div class="floating-card card-bottom"><span class="mini-icon">✧</span><span data-i18n="artCard2">سرّ ينتظر اكتشافك</span></div>
+        <div class="art-caption">EST. IN CURIOSITY</div>
+      </div>
+    </section>
+
+    <section id="daily" class="daily-strip">
+      <div class="daily-icon">✧</div><div class="daily-copy"><span class="section-kicker" data-i18n="dailyKicker">ملفّ اليوم</span><strong data-i18n="dailyTitle">هل يمكنك خداع المتاهة؟</strong><span data-i18n="dailyDesc">حلّ لغزًا قصيرًا وافتح طريقك إلى الجولة التالية.</span></div>
+      <button class="button button-ghost" data-launch="riddle"><span data-i18n="playNow">العب الآن</span> ↗</button>
+    </section>
+
+    <section id="games" class="games-section">
+      <div class="section-heading"><div><span class="section-kicker" data-i18n="gamesKicker">اختر بوابتك</span><h2 data-i18n="gamesTitle">أيّ عالم ستختبر؟</h2></div><p data-i18n="gamesDesc">أربع بدايات، وعدد لا نهائي من الطرق لتثبت ذكاءك.</p></div>
+      <div class="game-grid">
+        <article class="game-card card-riddle">
+          <div class="game-visual"><span class="game-number">01 / MIND</span><span class="game-art-icon">◈</span><span class="visual-word">THINK<br>TWICE</span></div>
+          <div class="game-content"><div class="game-meta"><span class="tag tag-purple" data-i18n="tagPuzzle">لغز ومنطق</span><span class="difficulty" data-i18n="difficultyMedium">متوسط</span></div><h3 data-i18n="riddleName">المتاهة التي تكذب</h3><p data-i18n="riddleDesc">ثلاث بوابات، وثلاث عبارات، وحقيقة واحدة. اكتشف الطريق الصحيح.</p><button class="game-button" data-launch="riddle"><span data-i18n="enterGame">ادخل اللعبة</span><span>↗</span></button></div>
+        </article>
+        <article class="game-card card-reflex">
+          <div class="game-visual"><span class="game-number">02 / SPEED</span><span class="game-art-icon">⌁</span><span class="visual-word">QUICK<br>WIT</span></div>
+          <div class="game-content"><div class="game-meta"><span class="tag tag-orange" data-i18n="tagSpeed">سرعة بديهة</span><span class="difficulty" data-i18n="difficultyFast">سريع</span></div><h3 data-i18n="speedName">شرارة العقل</h3><p data-i18n="speedDesc">لديك 20 ثانية. أجب عن أكبر عدد من الأسئلة قبل أن ينفد الوقت.</p><button class="game-button" data-launch="speed"><span data-i18n="enterGame">ادخل اللعبة</span><span>↗</span></button></div>
+        </article>
+        <article class="game-card card-personality">
+          <div class="game-visual"><span class="game-number">03 / SELF</span><span class="game-art-icon">☾</span><span class="visual-word">WHO<br>ARE YOU?</span></div>
+          <div class="game-content"><div class="game-meta"><span class="tag tag-pink" data-i18n="tagPersonality">اختبار شخصية</span><span class="difficulty" data-i18n="difficultyChill">على مهل</span></div><h3 data-i18n="personalityName">أثرُك في العالم المفقود</h3><p data-i18n="personalityDesc">قراراتك في رحلة خيالية تكشف أيّ نمط من المستكشفين يشبهك.</p><button class="game-button" data-launch="personality"><span data-i18n="enterGame">ادخل اللعبة</span><span>↗</span></button></div>
+        </article>
+        <article class="game-card card-chaos">
+          <div class="game-visual"><span class="game-number">04 / CHAOS</span><span class="game-art-icon">✳</span><span class="visual-word">CHAOS<br>MODE</span></div>
+          <div class="game-content"><div class="game-meta"><span class="tag tag-green" data-i18n="tagParty">تحدٍّ مضحك</span><span class="difficulty" data-i18n="difficultyGroup">مع الأصدقاء</span></div><h3 data-i18n="chaosName">كارثة تحت السيطرة</h3><p data-i18n="chaosDesc">اسحب مهمة غريبة، نفّذها أو مثّلها، ودع المجموعة تحكم على النتيجة.</p><button class="game-button" data-launch="chaos"><span data-i18n="enterGame">ادخل اللعبة</span><span>↗</span></button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-panel"><span class="quote-mark">“</span><p data-i18n="quote">ليست كل الأبواب تُفتح بالمفاتيح. بعضها يحتاج إلى فكرة لم تخطر لأحد.</p><span class="quote-credit" data-i18n="quoteCredit">— من قوانين VIXENVERSE</span></section>
+
+    <section id="about" class="about-section">
+      <div class="about-symbol">V.</div><div class="about-copy"><span class="section-kicker" data-i18n="aboutKicker">وراء البوابة</span><h2 data-i18n="aboutTitle">هذا العالم من صنع الخيال.</h2><p data-i18n="aboutDesc">VIXENVERSE مشروع ألعاب مستقل، يتوسع مع كل فكرة جديدة. هنا تبدأ الألغاز، وتولد المنافسات، ولا تنتهي الحكاية عند شاشة النتيجة.</p><div class="creator-line"><span data-i18n="createdBy">ابتكار وتطوير</span><strong>VixenShahd</strong></div></div>
+      <div class="about-stamp">VIXENVERSE<br><small>GAMES • MYSTERIES • CHAOS</small></div>
+    </section>
+  </main>
+
+  <footer><a class="footer-brand" href="#">VIXENVERSE</a><span data-i18n="footerLine">عالم من الألعاب والألغاز</span><span>Created by <strong>VixenShahd</strong></span></footer>
+
+  <div id="gameModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel"><button class="modal-close" data-close aria-label="Close">×</button><div class="modal-kicker">VIXENVERSE / <span id="modalCategory">GAME</span></div><h2 id="modalTitle">Game title</h2><div id="gameBody" class="game-body"></div><div id="gameFeedback" class="feedback" aria-live="polite"></div></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
